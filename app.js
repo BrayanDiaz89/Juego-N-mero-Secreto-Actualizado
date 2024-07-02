@@ -14,7 +14,7 @@ let listaNumerosSorteados = [];
 let numeroMaximo=20;
 let numeroMaximoIntentos=5;
 //verificamos si lo está generando en la función
-
+alert('Bienvenidos al juego del número secreto. Tienes 5 intentos, se recomienda reiniciar el juego al sortear todos los números disponibles (F5)');
 //creamos una función con parámetros, para que la función sea genérica o general
 function asignarTextoElemento(elemento, texto){
     let elementoHTML = document.querySelector(elemento);
@@ -92,7 +92,6 @@ function condicionesIniciales(){
     /*if (listaNumerosSorteados.length == numeroMaximo){ 
         asignarTextoElemento('.texto__parrafo','Ya se sortearon todos los números posibles.');
     } else{*/
-    alert('Bienvenidos al juego del número secreto. Tienes 5 intentos, se recomienda reiniciar el juego al sortear todos los números disponibles (F5)');
     numeroSecreto = generarNumeroSecreto();
     if(numeroSecreto !== -1){
     asignarTextoElemento('h1','Juego del número secreto.');
